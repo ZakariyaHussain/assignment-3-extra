@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet</title>
+    <!-- Tailwind and daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                yellow: '#FFDC26',
+                'bg-primary': '#FFF9F4'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <header class="bg-bg-primary">
+        <div class="container mx-auto navbar justify-between items-center">
+            <div class="hidden md:block">
+              <a class="btn btn-ghost text-xl">
+                <img src="assets/logo-header.png" alt="">
+              </a>
+            </div>
+            <div class="md:hidden">
+                <a class="btn btn-ghost text-xl">
+                  <img src="assets/logo-header-mobile.png" alt="">
+                </a>
+            </div>
+            <div class="navbar-center hidden md:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="gap-4 hidden md:flex">
+                <a href=""><img src="assets/bell.png" alt=""></a>
+                <a href=""><img src="assets/search.png" alt=""></a>
+                <a class="btn h-8 min-h-8 px-8 bg-transparent border-yellow">Login</a>
+                <a class="btn h-8 min-h-8 px-8 bg-yellow">Register</a>
+            </div>
+            <div class="dropdown justify-end md:hidden">
+                <div tabindex="0" role="button" class="btn btn-ghost">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 -ml-36 w-52 p-2 shadow">
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

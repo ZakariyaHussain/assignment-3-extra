@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet</title>
+    <!-- Google fonts cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Tailwind and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,7 +17,8 @@
               colors: {
                 clifford: '#da373d',
                 yellow: '#FFDC26',
-                'bg-primary': '#FFF9F4'
+                'bg-primary': '#FFF9F4',
+                'bg-secondery': '#F9DF8A'
               }
             }
           }
@@ -168,6 +171,189 @@
                 </div>
             </div>
         </div>
+        <!-- Trending Products Section -->
+        <section id="t-products" class="bg-bg-primary">
+          <div class="container mx-auto space-y-8 py-24">
+            <h2 class="font-bold text-4xl">Everyday low Price</h2>
+            <!-- Cards -->
+            <div class="flex flex-col md:flex-row gap-6"> 
+              <!-- Left card-->
+              <div class="relative w-full md:w-2/5 h-[25rem] md:h-auto bg-bg-secondery rounded-lg p-8">
+                <div>
+                  <h1 class="text-5xl font-bold">T- Shirt For Dogs</h1>
+                  <p class="py-6">
+                    Discover a world of treats, toys, and essentials handpicked for 
+                  </p>
+                  <a class="btn h-8 min-h-8 px-8 bg-white">Find a pet</a>
+                </div>
+                <div class="absolute right-0 bottom-0">
+                  <img
+                  src="assets/cute-pet-mid.png"
+                  class="rounded-lg hidden md:block"/>
+                  <img
+                  src="assets/cute-pet-small.png"
+                  class="rounded-lg md:hidden"/>
+                </div>
+              </div>
+              <!-- Right card -->
+              <div class="w-full md:w-3/5 grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/dog-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/bird-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/fish-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/fish-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/cat-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/pet-couch.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/mouse-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4 py-8">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/rabbit-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+                <!-- Card 9 -->
+                <div class="card card-side gap-4 justify-center items-center bg-base-100 border px-4">
+                  <div class="flex justify-center items-center bg-bg-primary rounded-full p-2">
+                    <img
+                    src="assets/cat-cartoon.png"
+                    alt="Movie" class="w-full" />
+                  </div>
+                  <div class="card-body p-0">
+                    <div class="flex gap-3">
+                      <i class="text-yellow fa-solid fa-star"></i>
+                      <p class="">5.0</p>
+                    </div>
+                    <h2 class="card-title">Pet Bed</h2>
+                    <p>$39.99</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        
     </main>
 </body>
 </html>
